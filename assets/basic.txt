@@ -1,0 +1,110 @@
+<?php
+include_once('global/cyp/cabezera.php');
+?>
+
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-7 align-self-center">
+                <h3 id="hora-dinamico" class="page-title text-truncate text-dark font-weight-medium mb-1"></h3>
+                <script>
+                    function mueveReloj() {
+                        momentoActual = new Date()
+                        hora = momentoActual.getHours()
+                        minuto = momentoActual.getMinutes()
+                        segundo = momentoActual.getSeconds()
+                        horaImprimible = hora + " : " + minuto + " : " + segundo
+                        document.getElementById("hora-dinamico").innerHTML = horaImprimible;
+                        setTimeout(mueveReloj, 1000)
+                    }
+                </script>
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 p-0">
+                            <li class="breadcrumb-item">NAV
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+       
+
+ <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h4 class="card-title mb-3">Default Tabs</h4>
+
+                        <ul class="nav nav-tabs mb-3">
+                            <li class="nav-item">
+                                <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                                    <span class="d-none d-lg-block">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                    <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                                    <span class="d-none d-lg-block">Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                                    <span class="d-none d-lg-block">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane" id="home">
+                                
+                            </div>
+                            <div class="tab-pane show active" id="profile">
+                                
+                                <div class="card">
+                                    <div class="card-body collapse show">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="settings">
+
+                                
+
+
+                            </div>
+                        </div>
+
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+
+
+
+
+    </div>
+    <footer class="footer text-center " style="color: black;">
+        44 Poniente #502 esq. blvd. 5 de Mayo Col. Santa María, C.P. 72080 Puebla, Puebla. <br>
+        Tel: (222) 2-20-54-44, (222) 5-14-75-56 coordinacion@iacsa-puebla.com.mx
+    </footer>
+
+</div>
+
+<?php
+include_once('global/cyp/pie.php');
+?>
